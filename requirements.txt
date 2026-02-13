@@ -1,0 +1,5 @@
+# No external dependencies required
+# This script uses only Python standard library modules:
+# - sqlite3
+# - csv
+# - os

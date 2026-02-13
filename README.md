@@ -1,5 +1,19 @@
 # Querying the SQLite Database
 
+## Setup
+
+Import CSV files into the SQLite database:
+
+```bash
+python3 import_csvs.py
+```
+
+This script will:
+- Create `data.sqlite3` database (removes existing one if present)
+- Import all CSV files: `patient.csv`, `provider.csv`, `diagnosis.csv`, `procedure.csv`, `medical_claim.csv`, `pharmacy_claim.csv`
+
+**Note:** No external Python packages are required - the script uses only Python standard library.
+
 ## Quick Start
 
 Query the database using the `sqlite3` command-line tool:
