@@ -1,5 +1,2 @@
-# No external dependencies required
-# This script uses only Python standard library modules:
-# - sqlite3
-# - csv
-# - os
+polars==1.36.1
+polars-runtime-32==1.36.1

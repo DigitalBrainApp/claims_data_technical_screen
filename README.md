@@ -1,28 +1,10 @@
-# Querying the SQLite Database
+# This repo contains notional claims data that we can use to both tech screen echoes and to practice data pipelining for FDEs / Devs
 
-## Setup
+## What is it
 
-Import CSV files into the SQLite database:
+A bunch of csv files that can be joined together. 
 
-```bash
-python3 import_csvs.py
-```
-
-This script will:
-- Create `data.sqlite3` database (removes existing one if present)
-- Import all CSV files: `patient.csv`, `provider.csv`, `diagnosis.csv`, `procedure.csv`, `medical_claim.csv`, `pharmacy_claim.csv`
-
-**Note:** No external Python packages are required - the script uses only Python standard library.
-
-## Quick Start
-
-Query the database using the `sqlite3` command-line tool:
-
-```bash
-sqlite3 data.sqlite3 "SELECT * FROM patient LIMIT 10;"
-```
-
-## Available Tables
+#### Available Tables
 
 - `patient`
 - `provider`
@@ -31,16 +13,58 @@ sqlite3 data.sqlite3 "SELECT * FROM patient LIMIT 10;"
 - `medical_claim`
 - `pharmacy_claim`
 
-## Example Query
+### Excel workflow
 
-View all columns from the patient table:
+Open the first CSV in excel or gsheets. Open another CSV in the same excel in a new sheet. Use vlookups to connect the datasets together. 
 
-```bash
-sqlite3 data.sqlite3 "SELECT * FROM patient LIMIT 10;"
-```
+### SQL workflow
 
-For better formatting with headers:
+Clone the repo or download from github. Assuming you have python installed, you can write the CSVs into a sqlite db like so:
 
 ```bash
-sqlite3 data.sqlite3 -header -column "SELECT * FROM patient LIMIT 10;"
+python3 import_csvs.py
 ```
+
+This script will:
+- Create `data.sqlite3` database (removes existing one if present)
+- Import all CSV files as tables: `patient`, `provider`, `diagnosis`, `procedure`, `medical_claim`, `pharmacy_claim`
+
+Now you can query this data in sql. 
+
+```bash
+% sqlite3 data.sqlite3
+sqlite> SELECT * FROM patient LIMIT 10;
+```
+
+### Python workflow
+
+Clone the repo and then wire up a virtualenv, install polars and other libraries. 
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Querying the Data with Python (Polars)
+
+Once you have installed `polars` and other dependencies (see Python workflow above), you can load and query the CSV files directly using `polars`. Here's an example of how to get started in a Python script or Jupyter notebook:
+
+```python
+import polars as pl
+
+# Load the CSV files into DataFrames
+df_patient = pl.read_csv("patient.csv")
+df_provider = pl.read_csv("provider.csv")
+df_diagnosis = pl.read_csv("diagnosis.csv")
+df_procedure = pl.read_csv("procedure.csv")
+df_medical_claim = pl.read_csv("medical_claim.csv")
+df_pharmacy_claim = pl.read_csv("pharmacy_claim.csv")
+
+# Example: Join patient with medical_claim on a key (e.g., patient_id)
+df = df_patient.join(df_medical_claim, on="patient_id", how="inner")
+
+# Show the first five rows
+print(df.head())
+```
+
