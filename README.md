@@ -1,4 +1,4 @@
-# This repo contains notional claims data that we can use to both tech screen echoes and to practice data pipelining for FDEs / Devs
+# This repo contains notional claims data that we can use to both tech screen deployment strategists and to practice data pipelining for FDEs / Devs
 
 ## What is it
 
