@@ -1,0 +1,60 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.20.2"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "93b3d2090cb462e9d253f2d63054574f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"claims-data-explorer\">Claims Data Explorer</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "64f7b42836d1ba02552d7c282c2644a4",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "50620499f79699d720530222f6258600",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='2dd4e665-2238-9df5-bcf9-63a874afe2e7'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;0025d1cd1e33cbb0a4549a6ee16211a0&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:2010,&#92;&quot;patient_zip3&#92;&quot;:711,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;LA&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2019-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2024-02-29&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;MEDICAL&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;MEDICAID&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;0025d1cd1e33cbb0a4549a6ee16211a0&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:2010,&#92;&quot;patient_zip3&#92;&quot;:711,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;LA&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2019-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2024-02-29&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;PHARMACY&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;MEDICAID&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;003bb14eb5cd1e5894b0a297ba5c8a54&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1934,&#92;&quot;patient_zip3&#92;&quot;:641,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;MO&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2023-11-30&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;MEDICAL&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;MEDICARE&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;003bb14eb5cd1e5894b0a297ba5c8a54&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1934,&#92;&quot;patient_zip3&#92;&quot;:641,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;MO&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2023-11-30&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;PHARMACY&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;MEDICARE&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;0043e20418ced8e6614abf486174ad8b&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;F&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1984,&#92;&quot;patient_zip3&#92;&quot;:833,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;ID&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2024-02-29&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;MEDICAL&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;COMMERCIAL&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;0043e20418ced8e6614abf486174ad8b&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;F&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1984,&#92;&quot;patient_zip3&#92;&quot;:833,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;ID&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2024-02-29&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;PHARMACY&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;COMMERCIAL&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;00678cc272e5d05ae562f6229444689a&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1934,&#92;&quot;patient_zip3&#92;&quot;:452,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;OH&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2023-12-31&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;MEDICAL&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;MEDICARE&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;00678cc272e5d05ae562f6229444689a&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1934,&#92;&quot;patient_zip3&#92;&quot;:452,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;OH&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2023-12-31&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;PHARMACY&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;MEDICARE&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;00932abdd327a37000be6aed8c6ec984&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1982,&#92;&quot;patient_zip3&#92;&quot;:436,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;OH&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2024-02-29&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;MEDICAL&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;COMMERCIAL&#92;&quot;},{&#92;&quot;patient_id&#92;&quot;:&#92;&quot;00932abdd327a37000be6aed8c6ec984&#92;&quot;,&#92;&quot;patient_gender&#92;&quot;:&#92;&quot;M&#92;&quot;,&#92;&quot;patient_year_of_birth&#92;&quot;:1982,&#92;&quot;patient_zip3&#92;&quot;:436,&#92;&quot;patient_state&#92;&quot;:&#92;&quot;OH&#92;&quot;,&#92;&quot;date_start&#92;&quot;:&#92;&quot;2017-01-01&#92;&quot;,&#92;&quot;date_end&#92;&quot;:&#92;&quot;2024-02-29&#92;&quot;,&#92;&quot;benefit_type&#92;&quot;:&#92;&quot;PHARMACY&#92;&quot;,&#92;&quot;pay_type&#92;&quot;:&#92;&quot;COMMERCIAL&#92;&quot;}]&quot;' data-total-rows='10' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;patient_id&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;patient_gender&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;patient_year_of_birth&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;patient_zip3&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;patient_state&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;date_start&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;date_end&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;benefit_type&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;pay_type&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false' data-download-file-name='&quot;df&quot;'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

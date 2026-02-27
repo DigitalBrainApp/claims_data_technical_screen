@@ -1,0 +1,9 @@
+[project]
+name = "claims-data-tech-screen"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "marimo[sql]>=0.20.2",
+]
