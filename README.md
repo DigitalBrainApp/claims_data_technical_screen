@@ -42,6 +42,8 @@ Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/):
 
 ```bash
 uv sync
+python3 import_csvs.py
+
 ```
 
 That's it — `uv` will create a virtual environment and install all dependencies automatically.
