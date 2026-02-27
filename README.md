@@ -38,17 +38,25 @@ sqlite> SELECT * FROM patient LIMIT 10;
 
 ### Python workflow
 
-Clone the repo and then wire up a virtualenv, install polars and other libraries. 
+Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/):
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+uv sync
+```
+
+That's it — `uv` will create a virtual environment and install all dependencies automatically.
+
+### Interactive Notebook (Marimo)
+
+To explore the data interactively, launch the included Marimo notebook:
+
+```bash
+uv run marimo edit notebook.py
 ```
 
 ### Querying the Data with Python (Polars)
 
-Once you have installed `polars` and other dependencies (see Python workflow above), you can load and query the CSV files directly using `polars`. Here's an example of how to get started in a Python script or Jupyter notebook:
+Once dependencies are installed, you can load and query the CSV files directly using `polars`. Here's an example of how to get started in a Python script or the Marimo notebook:
 
 ```python
 import polars as pl
