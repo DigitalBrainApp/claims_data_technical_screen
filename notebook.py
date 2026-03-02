@@ -37,5 +37,16 @@ def _(conn, mo, patient):
     return
 
 
+@app.cell
+def _(conn, medical_claim, mo, patient):
+    _df = mo.sql(
+        f"""
+        SELECT * FROM medical_claim LEFT JOIN patient on medical_claim.patient_id = patient.patient_id
+        """,
+        engine=conn
+    )
+    return
+
+
 if __name__ == "__main__":
     app.run()
