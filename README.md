@@ -22,6 +22,7 @@ Open the first CSV in excel or gsheets. Open another CSV in the same excel in a 
 Clone the repo or download from github. Assuming you have python installed, you can write the CSVs into a sqlite db like so:
 
 ```bash
+uv sync
 python3 import_csvs.py
 ```
 
@@ -38,19 +39,10 @@ sqlite> SELECT * FROM patient LIMIT 10;
 
 ### Python workflow
 
-Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/):
+Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/) and then query in marimo:
 
 ```bash
 uv sync
-```
-
-That's it — `uv` will create a virtual environment and install all dependencies automatically.
-
-### Interactive Notebook (Marimo)
-
-To explore the data interactively, launch the included Marimo notebook:
-
-```bash
 uv run marimo edit notebook.py
 ```
 
