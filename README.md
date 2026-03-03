@@ -37,7 +37,7 @@ Now you can query this data in sql.
 sqlite> SELECT * FROM patient LIMIT 10;
 ```
 
-### Python workflow
+### Marimo workflow (SQL and/or Python)
 
 Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/) and then query in marimo:
 
@@ -45,26 +45,6 @@ Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/) a
 uv sync
 uv run marimo edit notebook.py
 ```
+## Screenshot
 
-### Querying the Data with Python (Polars)
-
-Once dependencies are installed, you can load and query the CSV files directly using `polars`. Here's an example of how to get started in a Python script or the Marimo notebook:
-
-```python
-import polars as pl
-
-# Load the CSV files into DataFrames
-df_patient = pl.read_csv("patient.csv")
-df_provider = pl.read_csv("provider.csv")
-df_diagnosis = pl.read_csv("diagnosis.csv")
-df_procedure = pl.read_csv("procedure.csv")
-df_medical_claim = pl.read_csv("medical_claim.csv")
-df_pharmacy_claim = pl.read_csv("pharmacy_claim.csv")
-
-# Example: Join patient with medical_claim on a key (e.g., patient_id)
-df = df_patient.join(df_medical_claim, on="patient_id", how="inner")
-
-# Show the first five rows
-print(df.head())
-```
-
+![Marimo Notebook](screenshot_marimo.png)
