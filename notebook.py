@@ -31,5 +31,12 @@ def _(conn, mo, patient):
     return
 
 
+@app.cell
+def _(conn, mo, patient):
+    patients = mo.sql("SELECT * FROM patient", engine=conn)
+    patients.head(10)
+    return
+
+
 if __name__ == "__main__":
     app.run()
