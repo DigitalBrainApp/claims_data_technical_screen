@@ -43,6 +43,7 @@ Clone the repo and install dependencies using [uv](https://docs.astral.sh/uv/) a
 
 ```bash
 uv sync
+source .venv/bin/activate
 uv run marimo edit notebook.py
 ```
 ## Screenshot
