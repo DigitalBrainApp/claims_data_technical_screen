@@ -12,12 +12,12 @@ DB_FILE = 'data.sqlite3'
 
 # CSV files to import
 CSV_FILES = [
-    'patient.csv',
-    'provider.csv',
-    'diagnosis.csv',
-    'procedure.csv',
-    'medical_claim.csv',
-    'pharmacy_claim.csv'
+    'data/patient.csv',
+    'data/provider.csv',
+    'data/diagnosis.csv',
+    'data/procedure.csv',
+    'data/medical_claim.csv',
+    'data/pharmacy_claim.csv'
 ]
 
 def get_column_type(value):
