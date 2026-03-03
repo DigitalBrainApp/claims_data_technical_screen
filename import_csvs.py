@@ -101,7 +101,7 @@ def main():
                 print(f"Warning: {csv_file} not found, skipping...")
                 continue
             
-            table_name = os.path.splitext(csv_file)[0]
+            table_name = os.path.splitext(os.path.basename(csv_file))[0]
             print(f"Importing {csv_file} into table {table_name}...")
             
             create_table_from_csv(cursor, csv_file, table_name)
